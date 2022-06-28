@@ -1,0 +1,93 @@
+.container_1 {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.first {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 10px;
+  float: left;
+}
+
+.container_2 {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: gray;
+  position: relative;
+  overflow: hidden;
+}
+
+.second {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  width: 180px;
+  display: block;
+  text-align: center;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s all;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.cont {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.fir {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu_ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu_li {
+  color: #fff;
+  font-size: 20px;
+}
+
+.car_img {
+  max-width: 500px;
+}
+
+.car_img img {
+  width: 100%;
+}
